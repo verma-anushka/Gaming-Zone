@@ -1,0 +1,130 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800,900|Poppins:400,500,600,700,800,900|Titillium+Web:400,600,700&subset=cyrillic,cyrillic-ext,devanagari,latin-ext,vietnamese');
+
+/* */
+html {
+	overflow-x: hidden !important;
+	height: 100%;
+}
+body {
+	margin: 0;
+	padding: 0;
+	font-weight: 400;
+	font-size: 13px;
+	height: 100%;
+	text-align: center;
+}
+@-o-viewport {
+	width: device-width;
+}
+@-ms-viewport {
+	width: device-width;
+}
+@viewport {
+	width: device-width;
+}
+* {
+	margin:0;
+	padding:0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+p {
+	font-size: 11px;
+	line-height: 24px;
+	padding-bottom: 10px;
+	font-weight: 500;
+	color: #878C9F;
+	font-family: 'Poppins', sans-serif;
+}
+a {
+	text-decoration:none; 
+	position:relative; 
+	color:#000;
+}
+img { 
+	border: 0; 
+	-ms-interpolation-mode: bicubic; 
+	vertical-align: middle; 
+}
+:focus {
+	outline: 0;
+}
+
+/*  */
+.main-container {
+	font-family: 'Titillium Web', sans-serif;
+	margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.background_image {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+.neon {
+    position: relative;
+    overflow: hidden;
+    filter: brightness(200%);
+}
+.text {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-size: 110px;
+    font-weight: bold;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    position: relative;
+    user-select: none;
+}
+.text::before {
+    content: attr(data-text);
+    position: absolute;
+    color: white;
+    filter: blur(0.02em);
+    mix-blend-mode: difference;
+}
+.gradient {
+    position: absolute;
+    background: linear-gradient(45deg, maroon, red, gold, lightgreen, green, lightgreen, gold, red, maroon);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    mix-blend-mode: multiply;
+}
+.spotlight {
+    position: absolute;
+    top: -100%;
+    left: -100%;
+    right: 0;
+    bottom: 0;
+    background: 
+        radial-gradient(
+            circle,
+            white,
+            transparent 25%
+        ) center / 25% 25%,
+        radial-gradient(
+            circle,
+            white,
+            black 25%
+        ) center / 12.5% 12.5%;
+    animation: light 5s linear infinite;
+    mix-blend-mode: color-dodge;
+}
+@keyframes light {
+    to {
+        transform: translate(50%, 50%);
+    }
+}
+
