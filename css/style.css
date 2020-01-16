@@ -1,7 +1,7 @@
 @charset "utf-8";
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800,900|Poppins:400,500,600,700,800,900|Titillium+Web:400,600,700&subset=cyrillic,cyrillic-ext,devanagari,latin-ext,vietnamese');
 
-/* */
+/* GENERAL */
 html {
 	overflow-x: hidden !important;
 	height: 100%;
@@ -52,7 +52,8 @@ img {
 	outline: 0;
 }
 
-/*  */
+
+/* LANDING SECTION */
 .main-container {
 	font-family: 'Titillium Web', sans-serif;
 	margin: 0;
@@ -127,7 +128,8 @@ img {
         transform: translate(50%, 50%);
     }
 }
-/*  */
+
+/* RESPONSIVE */
 @media screen and (max-width: 682px) {
 	.text {
 		font-size: 99px;
@@ -173,7 +175,9 @@ img {
 		font-size: 19px;
 	}
 }
-/*  */
+
+
+/* GAMES SECTION */
 #main {
 	height: 100%;
 	width: 100%;
@@ -211,9 +215,6 @@ img {
 .full-height {
 	height: 100%;
 }
-
-
-/* */
 section {
 	display: block;
 	position: relative;
@@ -226,7 +227,7 @@ section {
 	background: #2A2A2E;
 }
 
-/*  */
+/* GAME CONTAINER */
 .gallery-items {
 	float: left;
 	width: 100%;
@@ -272,7 +273,7 @@ section {
 	opacity: 0.7;
 }
 
-/*  */
+/* SINGLE GAME */
 .box-item {
 	float: left;
 	width: 100%;
@@ -296,8 +297,6 @@ section {
 	padding: 20px;
 	z-index: 10;
 }
-
-/*  */
 .hd-box-wrap {
 	position: absolute;
 	bottom: 0;
@@ -362,7 +361,7 @@ section {
 	line-height: 18px;
 }
 
-/*  */
+/* GAME CONTAINER HOVER */
 .fet_pr-carousel-box-media-zoom {
 	position: absolute;
 	top: 0;
@@ -386,3 +385,5 @@ section {
 .gallery-item .fet_pr-carousel-box-media-zoom {
 	z-index: 100;
 }
+
+
