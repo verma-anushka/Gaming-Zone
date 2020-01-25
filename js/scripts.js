@@ -30,8 +30,16 @@ $(function () {
         });
     }
 
+    function scrollDown() {
+        $(".scroll_down").click(function() {
+            $('html, body').animate({
+                scrollTop: $("#main").offset().top
+            }, 1500);
+        });
+    }
     gridGallery();
     hoverdirInit();
+    scrollDown();
 
 });
 
